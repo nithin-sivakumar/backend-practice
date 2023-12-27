@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MVC Setup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        font-size: 24px;
+        font-weight: 900;
+      }
+
+      body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        background-color: #282c34;
+        color: white;
+      }
+
+      .container {
+        min-width: 800px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto;
+        background-color: #1f2229; /* Darker shade */
+        padding: 0px 100px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        padding: 14px 30px;
+        font-size: medium;
+        font-weight: normal;
+        font-family: "Montserrat", sans-serif;
+        background-color: #1e2128;
+        color: #ffffff;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid white;
+      }
+
+      p {
+        margin-bottom: 15px;
+        line-height: 1.5;
+      }
+
+      span {
+        color: #6ff3ea;
+      }
+
+      .button-wrapper:hover {
+        border: 1px solid #4a90e2;
+        background-color: #17191f;
+        color: #4a90e2;
+      }
+
+      .github-logo {
+        width: 20px;
+        margin-right: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          max-width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <ol>
+          <li>
+            Please run
+            <span>`npm init @eslint/config`</span> to configure eslint
+            (optional)
+          </li>
+          <li>
+            Kindly update
+            <span>`config/cors.config.js`</span> as per your requirements
+          </li>
+          <li>
+            Kindly update <span>`package.json`</span> as per your requirements
+          </li>
+        </ol>
+      </div>
+
+      <div onclick="handleButtonClick()" class="button-wrapper">
+        <img
+          class="github-logo"
+          src="https://cdn.iconscout.com/icon/free/png-512/free-github-163-761603.png"
+          alt="GitHub Logo"
+        />
+        <a>Github</a>
+      </div>
+    </div>
+
+    <script>
+      function handleButtonClick() {
+        window.location.href = "https://github.com/nithin-sivakumar";
+      }
+    </script>
+  </body>
+</html>
+  
